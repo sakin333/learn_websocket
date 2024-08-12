@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>
+                    Chat App
+                </h1>
+                <div>
+                    <input type="text" class="name-input" id="name-input" value="mock user" maxlength="20">
+                </div>
+            </div>
+            <div class="chat-messages" id="message-container">
+            </div>
+            <form class="chat-input" id="message-form">
+                <input type="text" name="message" placeholder="Type a message..." id="message-input" />
+                <button type="submit">Send</button>
+            </form>
+    
+            
+        </div>
+        <div class="total-members">
+            Total Group Members: <p id="totalMembers"></p>
+        </div>
+
+    </div>
+
+    <script src="ws.js"></script>
+</body>
+</html>
